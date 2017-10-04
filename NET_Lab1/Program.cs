@@ -1,12 +1,17 @@
 ﻿using System;
+using ClassLibrary;
 
-namespace NET_Lab1
+namespace ASPNET_Lab1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            AlertService alertService = new AlertService();
+            Console.WriteLine(alertService.ToString());
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
